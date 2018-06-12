@@ -6,7 +6,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.Diagnostico;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.Parte;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-05-04T18:50:23")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-06-12T03:56:41")
 @StaticMetamodel(DiagnosticoParte.class)
 public class DiagnosticoParte_ { 
 
