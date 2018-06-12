@@ -1,0 +1,6 @@
+#surefire
+#Tue Jun 12 03:57:11 CST 2018
+maven.ext.class.path=/home/aviles/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar
+user.dir=/home/aviles/NetBeansProjects/TPI/ServicioRestMantenimiento
+localRepository=/home/aviles/.m2/repository
+basedir=/home/aviles/NetBeansProjects/TPI/ServicioRestMantenimiento
