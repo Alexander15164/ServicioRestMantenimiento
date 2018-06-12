@@ -1,4 +1,4 @@
-ARG registry="192.168.0.18:5000/"
+ARG registry="192.168.0.21:5000/"
 ARG image="payara/micro"
 ARG tag=":4.181"
 FROM ${registry}${image}${tag}
