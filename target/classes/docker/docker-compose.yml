@@ -11,6 +11,20 @@ services:
      POSTGRES_USER: user
      POSTGRES_PASSWORD: db1234
      POSTGRES_DB: mantenimientodb
+  deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 500M
+        reservations:
+          cpus: '0.25'
+          memory: 200M
   web:    
     build: ./payara
     image: 192.168.0.21:5000/web-payara
@@ -18,5 +32,19 @@ services:
       - "8080:8080"
     depends_on:
       - dbpostgres
+  deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 500M
+        reservations:
+          cpus: '0.25'
+          memory: 200M
 volumes:
   vol-dbpostgres:
