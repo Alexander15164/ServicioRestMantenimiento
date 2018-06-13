@@ -71,14 +71,6 @@ public class AbstractResourceTest {
     public void tearDown() {
     }
 
-//    /**
-//     * Test of getFacade method, of class AbstractResource.
-//     */
-//    @Test
-//    public void testGetFacade() {
-//        System.out.println("getFacade");
-//        
-//    }
     /**
      * Test of findAll method, of class AbstractResource.
      *
@@ -136,11 +128,11 @@ public class AbstractResourceTest {
     @Test
     public void testEditElement() throws Exception {
         System.out.println("editElement");
-        Integer id = 1;
+        Marca registro = marcas().get(0);
         MarcaResource instance = new MarcaResource();
         Whitebox.setInternalState(instance, "mfl", mockmarcafacadelocal);
         Marca expResult = marcas().get(0);
-        String result = instance.deleteElement(id);
+        Marca result = instance.editElement(registro);
         assertEquals(expResult, result);
     }
 
@@ -159,7 +151,6 @@ public class AbstractResourceTest {
 //        String result = instance.deleteElement(id);
 //        assertEquals(expResult, result);
 //    }
-
     /**
      * Test of create method, of class AbstractResource.
      *
