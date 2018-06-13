@@ -1,20 +1,22 @@
-version: '3'
+version: "3"
 services:
- dbpostgres:
-  build: ./postgres
-  volumes:
-   - /private/var/lib/postgresql:/var/lib/postgresql/data
-  ports:
-   - "5432:5432"
+  dbpostgres:    
+    build: ./postgres
+    image: 192.168.0.21:5000/dbpostgres
+    volumes:
+      - vol-dbpostgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
   environment:
    POSTGRES_USER: user
    POSTGRES_PASSWORD: db1234
    POSTGRES_DB: mantenimientodb
- micro1:
-  build: ./payara
-  depends_on:
-   - dbpostgres
-  ports:
-   - "8080:8080"
-  volumes:
-   - ./payara-micro/deployments:/opt/payara/deployments
+  web:    
+    build: ./payara
+    image: 192.168.0.21:5000/web-payara
+    ports:
+      - "8080:8080"
+    depends_on:
+      - dbpostgres
+volumes:
+  vol-dbpostgres:
