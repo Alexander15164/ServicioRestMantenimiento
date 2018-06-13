@@ -12,8 +12,6 @@ services:
      POSTGRES_PASSWORD: db1234
      POSTGRES_DB: mantenimientodb
   deploy:
-      mode: replicated
-      replicas: 2
       restart_policy:
         condition: on-failure
         delay: 5s
@@ -34,8 +32,6 @@ services:
     depends_on:
       - dbpostgres
   deploy:
-      mode: replicated
-      replicas: 2
       restart_policy:
         condition: on-failure
         delay: 5s
