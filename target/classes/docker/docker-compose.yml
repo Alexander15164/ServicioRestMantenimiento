@@ -7,10 +7,10 @@ services:
       - vol-dbpostgres:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-  environment:
-   POSTGRES_USER: user
-   POSTGRES_PASSWORD: db1234
-   POSTGRES_DB: mantenimientodb
+    environment:
+     POSTGRES_USER: user
+     POSTGRES_PASSWORD: db1234
+     POSTGRES_DB: mantenimientodb
   web:    
     build: ./payara
     image: 192.168.0.21:5000/web-payara
