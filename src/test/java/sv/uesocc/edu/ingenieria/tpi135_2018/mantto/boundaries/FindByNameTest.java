@@ -16,11 +16,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Matchers;
 import org.mockito.Mockito;
+import org.mockito.internal.util.reflection.Whitebox;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.controller.MarcaFacadeLocal;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.Marca;
-import static sv.uesocc.edu.ingenieria.tpi135_2018.mantto.boundaries.AbstractResourceTest.marcas;
 
 /**
  *
@@ -57,7 +57,7 @@ public class FindByNameTest {
 
     @Before
     public void setUp() {
-     
+        Mockito.when(this.mockmarcafacadelocal.findByNameLike(Matchers.anyString(), Matchers.anyInt(), Matchers.anyInt())).thenReturn(marcas());
     }
 
     @After
@@ -66,15 +66,19 @@ public class FindByNameTest {
 
     /**
      * Test of findByName method, of class FindByName.
+     *
      * @throws java.lang.Exception
      */
     @Test
     public void testFindByName() throws Exception {
         System.out.println("findByName");
-        String nombre = "HP";
+        String nombre = "Dell";
         int first = 1;
         int pagesize = 1;
-
+        MarcaResource instance = new MarcaResource();
+        Whitebox.setInternalState(instance, "mfl", mockmarcafacadelocal);
+        Marca expResult = marcas().get(0);
+        List <Marca> result = instance.findByName(nombre,first,pagesize); 
     }
 
 }
