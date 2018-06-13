@@ -238,8 +238,8 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--  Comentando Docker down & up 
             
-            <!-- Docker-compose (down & up)-->
             <plugin>
                 <groupId>com.dkanejs.maven.plugins</groupId>
                 <artifactId>docker-compose-maven-plugin</artifactId>
@@ -269,6 +269,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
     </build>
     <repositories>
