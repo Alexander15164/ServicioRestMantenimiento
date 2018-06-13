@@ -12,11 +12,6 @@ services:
      POSTGRES_PASSWORD: db1234
      POSTGRES_DB: mantenimientodb
   deploy:
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-        window: 120s
       resources:
         limits:
           cpus: '0.25'
@@ -33,10 +28,6 @@ services:
       - dbpostgres
   deploy:
       restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-        window: 120s
       resources:
         limits:
           cpus: '0.25'
