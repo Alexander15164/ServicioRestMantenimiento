@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.EquipoDetalle;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.OrdenTrabajo;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-06-12T03:56:41")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-06-12T18:33:20")
 @StaticMetamodel(Equipo.class)
 public class Equipo_ { 
 

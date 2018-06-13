@@ -12,7 +12,7 @@ import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.Solicitud;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.TipoMantenimiento;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.Unidad;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-06-12T03:56:41")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-06-12T18:33:20")
 @StaticMetamodel(OrdenTrabajo.class)
 public class OrdenTrabajo_ { 
 
