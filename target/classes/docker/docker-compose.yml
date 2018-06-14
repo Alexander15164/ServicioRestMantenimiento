@@ -2,7 +2,7 @@ version: "3"
 services:
   dbpostgres:    
     build: ./postgres
-    image: 192.168.0.21:5000/dbpostgres
+    image: 192.168.0.18:5000/dbpostgres
     volumes:
       - vol-dbpostgres:/var/lib/postgresql/data
     ports:
@@ -13,7 +13,7 @@ services:
      POSTGRES_DB: mantenimientodb
   web:    
     build: ./payara
-    image: 192.168.0.21:5000/web-payara
+    image: 192.168.0.18:5000/web-payara
     ports:
       - "8084:8080"
     depends_on:
