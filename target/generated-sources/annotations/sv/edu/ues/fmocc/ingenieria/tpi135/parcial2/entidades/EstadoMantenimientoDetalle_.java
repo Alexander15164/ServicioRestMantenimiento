@@ -7,7 +7,7 @@ import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.Estado;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.MantenimientoDetalle;
 import sv.edu.ues.fmocc.ingenieria.tpi135.parcial2.entidades.Responsable;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-06-12T18:33:20")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-06-13T23:01:05")
 @StaticMetamodel(EstadoMantenimientoDetalle.class)
 public class EstadoMantenimientoDetalle_ { 
 

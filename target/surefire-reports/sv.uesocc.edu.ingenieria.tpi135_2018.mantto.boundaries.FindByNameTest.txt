@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: sv.uesocc.edu.ingenieria.tpi135_2018.mantto.boundaries.FindByNameTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.363 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.441 sec

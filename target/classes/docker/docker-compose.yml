@@ -15,7 +15,7 @@ services:
     build: ./payara
     image: 192.168.0.21:5000/web-payara
     ports:
-      - "8080:8080"
+      - "8084:8080"
     depends_on:
       - dbpostgres
 volumes:
